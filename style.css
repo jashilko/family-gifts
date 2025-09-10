@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    background: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  h1 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+  }
+  
+  nav a.active, nav a:hover {
+    background: #eee;
+  }
+  
+  #filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .gift {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gift img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .gift h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .gift p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  

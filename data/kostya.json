@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Наушники Sony WH-1000XM5",
+      "price": "≈ 45 000 ₽",
+      "link": "https://www.sony.ru/headphones",
+      "image": "https://cdn.sony.ru/wh1000xm5.jpg",
+      "gifted": false,
+      "canceled": false
+    },
+    {
+      "title": "Книга «Clean Architecture»",
+      "price": "≈ 3 000 ₽",
+      "link": "https://www.labirint.ru/books/123456/",
+      "image": "https://cdn.labirint.ru/images/clean-architecture.jpg",
+      "gifted": true,
+      "canceled": false
+    }
+  ]
+  

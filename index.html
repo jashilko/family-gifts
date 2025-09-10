@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Подарки семьи</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎁 Подарки семьи</h1>
+    <nav id="tabs">
+      <a href="/kostya" data-member="kostya">Костя</a>
+      <a href="/zhenya" data-member="zhenya">Женя</a>
+      <a href="/polina" data-member="polina">Полина</a>
+    </nav>
+  </header>
+
+  <section id="filters">
+    <label>
+      <input type="checkbox" id="hide-gifted" checked />
+      Скрыть подаренные
+    </label>
+    <label>
+      <input type="checkbox" id="hide-canceled" checked />
+      Скрыть отменённые
+    </label>
+  </section>
+
+  <main id="gift-list">
+    <p>Загрузка...</p>
+  </main>
+
+  <footer>
+    <p>Сайт семьи Shil • GitHub Pages</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
