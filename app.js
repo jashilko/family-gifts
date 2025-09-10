@@ -3,8 +3,13 @@ const hideGiftedEl = document.getElementById("hide-gifted");
 const hideCanceledEl = document.getElementById("hide-canceled");
 const tabs = document.querySelectorAll("#tabs a");
 
+// Определяем "базовый путь" (например, "/family-gifts/" на GitHub Pages)
+const basePath = window.location.pathname.includes("/family-gifts/")
+  ? "/family-gifts/"
+  : "/";
+
 function getCurrentMember() {
-  const path = window.location.pathname.replace(/^\/+|\/+$/g, "");
+  const path = window.location.pathname.replace(basePath, "").replace(/^\/+|\/+$/g, "");
   if (["kostya", "zhenya", "polina"].includes(path)) {
     return path;
   }
@@ -14,7 +19,7 @@ function getCurrentMember() {
 async function loadGifts(member) {
   giftListEl.innerHTML = "<p>Загрузка...</p>";
   try {
-    const response = await fetch(`data/${member}.json`);
+    const response = await fetch(`${basePath}data/${member}.json`);
     const gifts = await response.json();
     renderGifts(gifts);
   } catch (e) {
@@ -61,7 +66,7 @@ function setActiveTab(member) {
 }
 
 function navigate(member) {
-  history.pushState({}, "", `/${member}`);
+  history.pushState({}, "", `${basePath}${member}`);
   setActiveTab(member);
   loadGifts(member);
 }
