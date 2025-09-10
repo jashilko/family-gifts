@@ -4,15 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Подарки семьи</title>
+
+  <!-- Базовый путь для всех ссылок и ресурсов -->
+  <script>
+    (function() {
+      const base = document.createElement("base");
+      if (window.location.pathname.includes("/family-gifts/")) {
+        base.href = "/family-gifts/";
+      } else {
+        base.href = "/";
+      }
+      document.head.appendChild(base);
+    })();
+  </script>
+
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <h1>🎁 Подарки семьи</h1>
     <nav id="tabs">
-      <a href="/kostya" data-member="kostya">Костя</a>
-      <a href="/zhenya" data-member="zhenya">Женя</a>
-      <a href="/polina" data-member="polina">Полина</a>
+      <a href="kostya" data-member="kostya">Костя</a>
+      <a href="zhenya" data-member="zhenya">Женя</a>
+      <a href="polina" data-member="polina">Полина</a>
     </nav>
   </header>
 
