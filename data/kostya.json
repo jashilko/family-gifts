@@ -1,18 +1,18 @@
 [
     {
-      "title": "Наушники Sony WH-1000XM5",
-      "price": "≈ 45 000 ₽",
-      "link": "https://www.sony.ru/headphones",
-      "image": "https://cdn.sony.ru/wh1000xm5.jpg",
+      "title": "reMarkable Paper Pro Move",
+      "price": "$ 449",
+      "link": "https://remarkable.com/products/remarkable-paper/pro-move",
+      "image": "https://cdn.sanity.io/images/xpujt61d/production/b1f9df597580791f2f1bcbf4bb217415e9ada003-4000x4000.png?rect=344,284,3358,3470&w=1920&fm=webp&q=85&dpr=1",
       "gifted": false,
       "canceled": false
     },
     {
-      "title": "Книга «Clean Architecture»",
-      "price": "≈ 3 000 ₽",
-      "link": "https://www.labirint.ru/books/123456/",
-      "image": "https://cdn.labirint.ru/images/clean-architecture.jpg",
-      "gifted": true,
+      "title": "Внешний диск SSD Samsung T7 MU-PC1T0T/WW, 1ТБ, черный",
+      "price": "≈ 13 000 ₽",
+      "link": "https://market.yandex.ru/card/vneshniy-disk-ssd-samsung-t7-mu-pc1t0tww-1tb-chernyy/103635721335?do-waremd5=ARhjJEm1Q8AZRYVCy8QRlg&cpc=DUNNOU5z56uZ8hUDKxoIi8qWT0fNhFbCQGMM6CRO3YhAA1hRxhjZQJOYpUNrrANidTbhDakwCxVCZi0d61ILgbrtMj905apMPjiLw8sLyEGE14UF8jQruLXW6TYLLSqRmVmvLgEkenA5QuBhK5OlKwlMkC2X5nL8rsWGncGjlxJsBizsHLDD-3xjYZI0lLrgITag0s6McFuPNT-lKxMwGF3xrw61hp78l6dzMMRBpRK1rSr4gA71enfBRYmz9R8DBglJ2sxUlI7DXwpthjiXf9hBSnhIOS_7UxeYjtBEYwrABPTCLBPEb4p6_CE95B8aV9ZX2gfPQaH0MREn4U56f_IzRmjPq4_L6HOWWNdsNmBZN1wxbwicca85m2JoITtezBG6Xs-azyWsBThJhWI9iaCTpCPoOTwNuW3m0kyIOqZ2EvdBh2Ax1SPRp9vFKrfR8NIPUXIRUUxVGa1d2KKJga4CsCe_e5l8_KmRgFYzT_cXgLqgYnVFCt1RApDnV3ITuIZ8x3hzWznOc2hVFn9MNtq-O2sI0USdVIyr2e6DEugoBFcBrPEkDDZmdPcOz_L5&ogV=-3",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlhmhwj7OrDo18VZFVkDkRiykm5Z9kFZSaw&s",
+      "gifted": false,
       "canceled": false
     }
   ]
