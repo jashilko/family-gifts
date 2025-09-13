@@ -1,35 +1,32 @@
-// Проверяем, сохранил ли 404.html путь
+const giftListEl = document.getElementById("gift-list");
+const hideGiftedEl = document.getElementById("hide-gifted");
+const hideCanceledEl = document.getElementById("hide-canceled");
+const tabs = document.querySelectorAll("#tabs a");
+
+// базовый путь (для GitHub Pages)
+const basePath = "/family-gifts/";
+
+// если пришли из 404.html
 const savedPath = sessionStorage.getItem("redirectPath");
 if (savedPath) {
   sessionStorage.removeItem("redirectPath");
   history.replaceState({}, "", `${basePath}${savedPath}`);
 }
 
-const giftListEl = document.getElementById("gift-list");
-const hideGiftedEl = document.getElementById("hide-gifted");
-const hideCanceledEl = document.getElementById("hide-canceled");
-const tabs = document.querySelectorAll("#tabs a");
-
-// Определяем "базовый путь" (например, "/family-gifts/" на GitHub Pages)
-const basePath = window.location.pathname.includes("/family-gifts/")
-  ? "/family-gifts/"
-  : "/";
-
 function getCurrentMember() {
   const path = window.location.pathname.replace(basePath, "").replace(/^\/+|\/+$/g, "");
-  if (["kostya", "zhenya", "polina"].includes(path)) {
-    return path;
-  }
-  return "kostya"; // по умолчанию
+  return ["kostya", "zhenya", "polina"].includes(path) ? path : "kostya";
 }
 
 async function loadGifts(member) {
   giftListEl.innerHTML = "<p>Загрузка...</p>";
   try {
-    const response = await fetch(`${basePath}data/${member}.json`);
+    const response = await fetch(`${basePath}data/${member}.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const gifts = await response.json();
     renderGifts(gifts);
   } catch (e) {
+    console.error("Ошибка загрузки:", e);
     giftListEl.innerHTML = "<p>Не удалось загрузить список подарков.</p>";
   }
 }
@@ -67,9 +64,7 @@ function renderGifts(gifts) {
 }
 
 function setActiveTab(member) {
-  tabs.forEach(tab => {
-    tab.classList.toggle("active", tab.dataset.member === member);
-  });
+  tabs.forEach(tab => tab.classList.toggle("active", tab.dataset.member === member));
 }
 
 function navigate(member) {
@@ -78,12 +73,10 @@ function navigate(member) {
   loadGifts(member);
 }
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", e => {
-    e.preventDefault();
-    navigate(tab.dataset.member);
-  });
-});
+tabs.forEach(tab => tab.addEventListener("click", e => {
+  e.preventDefault();
+  navigate(tab.dataset.member);
+}));
 
 hideGiftedEl.addEventListener("change", () => loadGifts(getCurrentMember()));
 hideCanceledEl.addEventListener("change", () => loadGifts(getCurrentMember()));

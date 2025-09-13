@@ -4,20 +4,17 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
   <script>
-    // Базовый путь (для GitHub Pages — /family-gifts/)
-    const base = "/family-gifts/";
-
-    // Вырезаем часть после basePath
-    const path = window.location.pathname.replace(base, "").replace(/^\/+|\/+$/g, "");
-
-    // Сохраняем во временное хранилище
-    sessionStorage.setItem("redirectPath", path);
-
-    // Перенаправляем на index.html
-    window.location.replace(base);
+    (function () {
+      const repoBase = "/family-gifts/";
+      const path = window.location.pathname.replace(repoBase, "").replace(/^\/+|\/+$/g, "");
+      if (path) {
+        sessionStorage.setItem("redirectPath", path);
+      }
+      window.location.replace(repoBase);
+    })();
   </script>
 </head>
 <body>
-  <p>Перенаправляем...</p>
+  <p>Перенаправляем…</p>
 </body>
 </html>
