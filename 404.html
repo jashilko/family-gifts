@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
   <script>
-    // Перенаправляем на index.html, сохранив путь
-    const redirectTo = "/family-gifts/";
-    const path = window.location.pathname.replace(redirectTo, "");
+    // Базовый путь (для GitHub Pages — /family-gifts/)
+    const base = "/family-gifts/";
+
+    // Вырезаем часть после basePath
+    const path = window.location.pathname.replace(base, "").replace(/^\/+|\/+$/g, "");
+
+    // Сохраняем во временное хранилище
     sessionStorage.setItem("redirectPath", path);
-    window.location.replace(redirectTo);
+
+    // Перенаправляем на index.html
+    window.location.replace(base);
   </script>
 </head>
 <body>

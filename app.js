@@ -1,4 +1,4 @@
-// Если нас вернули из 404.html — подхватить путь
+// Проверяем, сохранил ли 404.html путь
 const savedPath = sessionStorage.getItem("redirectPath");
 if (savedPath) {
   sessionStorage.removeItem("redirectPath");
