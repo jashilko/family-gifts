@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    // Перенаправляем на index.html, сохранив путь
+    const redirectTo = "/family-gifts/";
+    const path = window.location.pathname.replace(redirectTo, "");
+    sessionStorage.setItem("redirectPath", path);
+    window.location.replace(redirectTo);
+  </script>
+</head>
+<body>
+  <p>Перенаправляем...</p>
+</body>
+</html>

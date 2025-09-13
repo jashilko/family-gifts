@@ -1,3 +1,10 @@
+// Если нас вернули из 404.html — подхватить путь
+const savedPath = sessionStorage.getItem("redirectPath");
+if (savedPath) {
+  sessionStorage.removeItem("redirectPath");
+  history.replaceState({}, "", `${basePath}${savedPath}`);
+}
+
 const giftListEl = document.getElementById("gift-list");
 const hideGiftedEl = document.getElementById("hide-gifted");
 const hideCanceledEl = document.getElementById("hide-canceled");
