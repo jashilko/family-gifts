@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirecting...</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redirecting…</title>
   <script>
     (function () {
-      const repoBase = "/family-gifts/";
-      const path = window.location.pathname.replace(repoBase, "").replace(/^\/+|\/+$/g, "");
-      if (path) {
-        sessionStorage.setItem("redirectPath", path);
-      }
-      window.location.replace(repoBase);
+      // Пытаемся угадать "корень сайта" по текущему URL:
+      // если сайт — проект на GitHub Pages, путь выглядит как /<repo>/...
+      // но нам не нужно знать имя репо: вернёмся на каталог, где лежит index.html и app.js.
+      // index.html лежит в том же каталоге, что и 404.html (корень сайта).
+      // => base — это pathname каталога 404.html, т.е. до последнего слеша.
+      var path = window.location.pathname;
+      var base = path.endsWith("/") ? path : path.replace(/[^/]+$/, "");
+      // Если пришли на вложенный путь (например, /family-gifts/zhenya),
+      // сохраним хвост относительно base (=> "zhenya") и вернёмся на base.
+      var tail = window.location.pathname.replace(base, "").replace(/^\/+|\/+$/g, "");
+      if (tail) sessionStorage.setItem("redirectPath", tail);
+      // Редиректим обратно на base (index.html)
+      window.location.replace(base);
     })();
   </script>
 </head>
 <body>
-  <p>Перенаправляем…</p>
+  <p>Redirecting…</p>
 </body>
 </html>
