@@ -4,8 +4,8 @@
       "price": "$ 449",
       "link": "https://remarkable.com/products/remarkable-paper/pro-move",
       "image": "https://cdn.sanity.io/images/xpujt61d/production/b1f9df597580791f2f1bcbf4bb217415e9ada003-4000x4000.png?rect=344,284,3358,3470&w=1920&fm=webp&q=85&dpr=1",
-      "gifted": true,
-      "canceled": false
+      "gifted": false,
+      "canceled": true
     },
     {
       "title": "Внешний диск SSD Samsung T7 MU-PC1T0T/WW, 1ТБ, черный",
