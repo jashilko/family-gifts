@@ -4,7 +4,7 @@
       "price": "$ 449",
       "link": "https://remarkable.com/products/remarkable-paper/pro-move",
       "image": "https://cdn.sanity.io/images/xpujt61d/production/b1f9df597580791f2f1bcbf4bb217415e9ada003-4000x4000.png?rect=344,284,3358,3470&w=1920&fm=webp&q=85&dpr=1",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     },
     {
@@ -21,6 +21,15 @@
       "price": "$ 199",
       "link": "https://www.polar.com/us-en/loop",
       "image": "https://www.polar.com/img/cms/d097fdbfcc1fa9c9708b2f1060da7f24cb9d5bf3-1500x1500-1000.webp",
+      "gifted": false,
+      "canceled": false
+    }
+    ,
+    {
+      "title": "Книга: Быстрее и сильнее. Как тренироваться с умом на базе знаний из 12 бестселлеров о спорте",
+      "price": "600 (Промокод SMART10 в Озоне на скидку 10%)",
+      "link": "https://www.ozon.ru/product/bystree-i-silnee-kak-trenirovatsya-s-umom-na-baze-znaniy-iz-12-bestsellerov-o-sporte-smart-reading-2281994863/?__rr=1&abt_att=1&af_dp=https%3A%2F%2Fozon.ru%2Fproduct%2Fbystree-i-silnee-kak-trenirovatsya-s-umom-na-baze-znaniy-iz-12-bestsellerov-o-sporte-smart-reading-2281994863%2F%3Fat%3DGRt2XpgJ0cE2GqDXFy9rZlgfz2zwrWiBgDVqVIEE7YD8&at=GRt2XpgJ0cE2GqDXFy9rZlgfz2zwrWiBgDVqVIEE7YD8&erid=2SDnjeLZ8b9&hs=1&shortlink=jqqr8crw&source_caller=api&utm_campaign=vendor_org_1209_yadgarov&utm_content=post1_28102025&utm_medium=cpc&utm_source=telegram&utm_term=pro_sport",
+      "image": "https://ir.ozone.ru/s3/multimedia-1-g/wc1000/7637384032.jpg",
       "gifted": false,
       "canceled": false
     }
