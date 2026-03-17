@@ -21,7 +21,7 @@
       "price": "1500 - 3500",
       "link": "https://ozon.ru/t/rlfrPJg",
       "image": "https://basket-27.wbbasket.ru/vol4917/part491778/491778757/images/big/2.webp",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     }
     , 
@@ -39,7 +39,7 @@
       "price": "~ 1000",
       "link": "https://www.labirint.ru/series/44014/",
       "image": "https://imo10.labirint.ru/books/754141/cover.jpg/363-0",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     } 
     , 
@@ -48,7 +48,7 @@
       "price": "2100",
       "link": "https://ozon.ru/t/Qi0QhiP",
       "image": "https://ir.ozone.ru/s3/multimedia-1-j/wc1000/7439840191.jpg",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     }
     , 
@@ -57,7 +57,7 @@
       "price": "1000",
       "link": "https://www.wildberries.ru/catalog/238020452/detail.aspx?targetUrl=SN",
       "image": "https://basket-15.wbbasket.ru/vol2380/part238020/238020452/images/big/1.webp",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     }
   ]
