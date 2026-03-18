@@ -66,7 +66,7 @@
       "price": "1000",
       "link": " https://ozon.ru/t/EAg5nCW",
       "image": "https://ir.ozone.ru/s3/multimedia-1-h/wc1000/8406364553.jpg",
-      "gifted": true,
-      "canceled": true
+      "gifted": false,
+      "canceled": false
     }
   ]
