@@ -30,7 +30,7 @@
       "price": "4500",
       "link": "https://hobbygames.ru/moj-malenkij-jeverdell/",
       "image": "https://hobbygames.ru/image/cache/hobbygames_beta/data/-new/hobby-world/moj-malenkij-jeverdel/moj-malenkij-jeverdell-04-1000x416-wm.webp",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     }
     , 
@@ -66,7 +66,7 @@
       "price": "1000",
       "link": " https://ozon.ru/t/EAg5nCW",
       "image": "https://ir.ozone.ru/s3/multimedia-1-h/wc1000/8406364553.jpg",
-      "gifted": false,
+      "gifted": true,
       "canceled": false
     }
   ]
